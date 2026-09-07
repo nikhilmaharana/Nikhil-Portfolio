@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nikhil Maharana — AI / Full-Stack Developer</title>
+<meta name="description" content="AI / Full-Stack Developer building intelligent products, full-stack systems and experimental digital experiences.">
+
+<meta property="og:title" content="Nikhil Maharana — AI / Full-Stack Developer">
+<meta property="og:description" content="AI / Full-Stack Developer building intelligent products, full-stack systems and experimental digital experiences.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Nikhil Maharana — AI / Full-Stack Developer">
+<meta name="twitter:description" content="AI / Full-Stack Developer building intelligent products, full-stack systems and experimental digital experiences.">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2242%22 fill=%22%230A0B0D%22 stroke=%22%235CC8FF%22 stroke-width=%226%22/></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ================= ENTRY / LOADER ================= -->
+<div id="entry" aria-hidden="false">
+  <div class="entry-inner">
+    <p class="entry-eyebrow">Nikhil Maharana</p>
+    <h1 class="entry-name">NIKHIL<br>MAHARANA</h1>
+    <p class="entry-role">AI / Full-Stack Developer</p>
+    <p class="entry-tagline">Building intelligent products, full-stack systems and experimental digital experiences.</p>
+    <button id="enterBtn" class="enter-btn">Enter experience</button>
+  </div>
+</div>
+
+<!-- ================= NAV ================= -->
+<header id="siteNav" class="site-nav">
+  <a href="#hero" class="nav-mark">NM</a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#journey">Journey</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#signal">Signal</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-right">
+    <button id="osOpenBtn" class="os-trigger" aria-haspopup="dialog" aria-controls="osPanel">
+      <span class="os-dot" aria-hidden="true"></span> NIKHIL.OS
+    </button>
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<nav id="mobileNav" class="mobile-nav" aria-label="Mobile">
+  <a href="#journey">Journey</a>
+  <a href="#experience">Experience</a>
+  <a href="#tech">Tech Stack</a>
+  <a href="#projects">Projects</a>
+  <a href="#experiments">AI Experiments</a>
+  <a href="#signal">Signal</a>
+  <a href="#beyond">Beyond the Code</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section id="hero" class="hero">
+    <canvas id="coreCanvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <p class="eyebrow">Berhampur, Odisha</p>
+      <h1 class="hero-title">Nikhil Maharana</h1>
+      <p class="hero-role">AI / Full-Stack Developer</p>
+      <p class="hero-tagline">Building intelligent products, full-stack systems and experimental digital experiences.</p>
+
+      <div class="orientation" role="group" aria-label="Choose a perspective">
+        <span class="orientation-label">I'm here as a —</span>
+        <button class="orientation-btn is-active" data-mode="explore">Explore</button>
+        <button class="orientation-btn" data-mode="recruiter">Recruiter</button>
+        <button class="orientation-btn" data-mode="client">Client</button>
+      </div>
+    </div>
+    <a href="#journey" class="scroll-hint" aria-label="Scroll to content">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section about">
+    <div class="section-grid">
+      <div class="about-media">
+        <img src="images/portrait-hero.jpg" alt="Portrait of Nikhil Maharana" loading="lazy">
+      </div>
+      <div class="about-copy">
+        <h2>About</h2>
+        <p class="lede" id="aboutSummary"></p>
+        <p class="statement" id="aboutStatement"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= JOURNEY ================= -->
+  <section id="journey" class="section journey">
+    <h2>Journey</h2>
+    <p class="section-sub">Different route. Same direction.</p>
+    <ol class="timeline" id="journeyList"></ol>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience" class="section experience">
+    <h2>Experience</h2>
+    <div class="exp-list" id="experienceList"></div>
+  </section>
+
+  <!-- ================= TECH STACK ================= -->
+  <section id="tech" class="section tech">
+    <h2>Tech Stack</h2>
+    <div class="tech-grid" id="techGrid"></div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section projects">
+    <h2>Project World</h2>
+    <div class="project-list" id="projectList"></div>
+  </section>
+
+  <!-- ================= AI EXPERIMENTS ================= -->
+  <section id="experiments" class="section experiments">
+    <h2>Experimental Lab</h2>
+    <p class="section-sub" id="experimentsIntro"></p>
+    <div class="experiments-grid" id="experimentsGrid"></div>
+  </section>
+
+  <!-- ================= SIGNAL ================= -->
+  <section id="signal" class="section signal">
+    <div class="signal-bg" aria-hidden="true">
+      <svg id="waveform" viewBox="0 0 1200 200" preserveAspectRatio="none"></svg>
+    </div>
+    <div class="signal-inner">
+      <h2>Signal</h2>
+      <p class="section-sub" id="signalIntro"></p>
+
+      <ol class="signal-timeline" id="signalTimeline"></ol>
+
+      <div class="signal-media">
+        <img src="images/signal-2.jpg" alt="Nikhil Maharana playing guitar" loading="lazy">
+        <img src="images/signal-1.jpg" alt="Nikhil Maharana with a guitar outdoors" loading="lazy">
+      </div>
+
+      <div class="signal-cards">
+        <a class="signal-card" id="signalYoutube" target="_blank" rel="noopener noreferrer">
+          <span class="signal-card-label">YouTube</span>
+          <span class="signal-card-title">Explore the music channel</span>
+        </a>
+        <a class="signal-card" id="signalInstagram" target="_blank" rel="noopener noreferrer">
+          <span class="signal-card-label">Instagram</span>
+          <span class="signal-card-title">Follow the musical journey</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BEYOND THE CODE ================= -->
+  <section id="beyond" class="section beyond">
+    <h2>Beyond the Code</h2>
+    <div class="beyond-grid" id="beyondGrid"></div>
+  </section>
+
+  <!-- ================= FUTURE ================= -->
+  <section id="future" class="section future">
+    <h2 id="futureHeading"></h2>
+    <ul class="future-list" id="futureList"></ul>
+  </section>
+
+  <!-- ================= RESUME ================= -->
+  <section id="resume" class="section resume">
+    <h2>Resume</h2>
+    <p class="section-sub">Education, certifications and the full professional record, in one document.</p>
+    <div class="resume-actions">
+      <a id="resumeView" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View résumé</a>
+      <a id="resumeDownload" class="btn btn-ghost" download>Download PDF</a>
+    </div>
+    <div class="edu-cert-grid">
+      <div>
+        <h3>Education</h3>
+        <ul id="eduList"></ul>
+      </div>
+      <div>
+        <h3>Certifications</h3>
+        <ul id="certList"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SOCIAL HUB ================= -->
+  <section id="social" class="section social">
+    <h2>Elsewhere</h2>
+    <div class="social-grid" id="socialGrid"></div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section contact">
+    <h2 id="contactHeading"></h2>
+    <p class="section-sub" id="contactBody"></p>
+    <div class="contact-actions">
+      <a id="contactEmail" class="btn btn-primary">Email Nikhil</a>
+      <a id="contactLinkedin" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a id="contactGithub" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>Nikhil Maharana — AI / Full-Stack Developer</p>
+    <p class="footer-sub">Designed and built as a self-contained, database-free static site.</p>
+  </footer>
+
+</main>
+
+<!-- ================= NIKHIL.OS PANEL ================= -->
+<div id="osPanel" class="os-panel" role="dialog" aria-modal="true" aria-labelledby="osTitle" hidden>
+  <div class="os-panel-inner">
+    <div class="os-header">
+      <span id="osTitle">NIKHIL.OS</span>
+      <button id="osCloseBtn" aria-label="Close">&times;</button>
+    </div>
+    <input id="osInput" type="text" placeholder="Ask about projects, skills, internships, music…" autocomplete="off">
+    <div id="osResults" class="os-results" role="listbox"></div>
+    <p class="os-hint">Try: "Show me his internships" · "AI projects" · "Contact"</p>
+  </div>
+</div>
+<div id="osOverlay" class="os-overlay" hidden></div>
+
+<script src="js/data.js"></script>
+<script src="js/render.js"></script>
+<script src="js/os.js"></script>
+<script src="https://unpkg.com/three@0.128.0/build/three.min.js" defer></script>
+<script src="js/core3d.js" defer></script>
+<script src="js/main.js"></script>
+</body>
+</html>
