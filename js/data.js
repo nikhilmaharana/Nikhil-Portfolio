@@ -19,7 +19,7 @@ const PORTFOLIO = {
     linkedin:  { url: "https://www.linkedin.com/in/nikhil-maharana-089b73337/",     label: "LinkedIn",  purpose: "Professional journey" },
     leetcode:  { url: "https://leetcode.com/u/Nikhilgudu2003/",                     label: "LeetCode",  purpose: "Problem solving" },
     youtube:   { url: "https://www.youtube.com/@nikhilmaharanamusic",               label: "YouTube",   purpose: "Music" },
-    instagram: { url: "https://www.instagram.com/nikhil.maharana.music/",           label: "Instagram", purpose: "Music & creative" },
+    instagram: { url: "https://www.instagram.com/_nikhil.maharana.music_/",           label: "Instagram", purpose: "Music & creative" },
     email:     { url: "mailto:nikhilmaharana10@gmail.com",                          label: "Email",     purpose: "Direct contact" },
   },
 
